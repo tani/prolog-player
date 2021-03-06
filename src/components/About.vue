@@ -3,7 +3,7 @@
     <p>
         The author is TANIGUCHI Masaya. He have published this software sice Mar. 2021.
         The code is licensed under the MIT license. You can see the code at
-        <a href="https://github.com/tani/prolog-player">GitHub</a>.
+        <a href="https://github.com/tani/prolog-player" target="_blank">GitHub</a>.
         Please visit here if you have some idea or contributions.
     </p>
     <h3>Terms of Use</h3>
