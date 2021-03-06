@@ -1,4 +1,4 @@
-# try-prolog
+# Prolog Player
 
 ## Project setup
 ```
