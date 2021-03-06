@@ -10,8 +10,8 @@ export default (html, css, prolog, limit, query) => {
           window.addEventListener('load', async () => {
             try {
               const session = pl.create(${limit})
-              await new Promise((success, error) => session.consult("main.pl")) 
-              await new Promise((success, error) => session.query("${query}")) 
+              await new Promise((success, error) => session.consult("main.pl", {success, error})) 
+              await new Promise((success, error) => session.query("${query}", {success, error})) 
               session.answer({
                   success(answer) {
                       console.log(session.format_answer(answer))

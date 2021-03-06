@@ -8,7 +8,6 @@
       <label for="qeury">Query</label>
       <InputText id="query" v-model="settings.query" @input="handleChange"/>
     </div>
-    <Button label="Save" @click="handleSave" />
   </div>
 </template>
 
@@ -16,7 +15,6 @@
 import { reactive } from '@vue/runtime-core';
 import InputNumber from 'primevue/inputnumber/sfc'
 import InputText from 'primevue/inputtext/sfc'
-import Button from 'primevue/button/sfc'
 export default {
     name: "Settings",
     emits: ['change','update:modelValue'],
@@ -26,7 +24,6 @@ export default {
     components: {
         InputNumber,
         InputText,
-        Button
     },
     setup(props, {emit}) {
         const settings = reactive({
@@ -37,13 +34,9 @@ export default {
             emit("change")
             emit("update:modelValue", settings)
         }
-        const handleSave = () => {
-            window.history.pushState({}, '', props.url)
-        }
         return {
             settings,
             handleChange,
-            handleSave,
         }
     }
 }

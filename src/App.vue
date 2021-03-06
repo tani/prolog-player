@@ -130,8 +130,9 @@ html, body, #app {
   justify-content: center;
 }
 small {
+  color: #999;
   display: block;
-  width: 50%;
+  width: 200px;
   margin-top: 10px;
 }
 </style>
