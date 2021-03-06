@@ -6,6 +6,7 @@
         <a href="https://github.com/tani/prolog-player" target="_blank">GitHub</a>.
         Please visit here if you have some idea or contributions.
     </p>
+    <p>This software based on Vue, Primevue, and Tau Prolog. Thank you for great softwares!</p>
     <h3>Terms of Use</h3>
     <p>
         You must comply with the MIT license when distributing or running applications through this software. The term distribute includes the following cases:
