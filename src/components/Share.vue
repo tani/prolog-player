@@ -27,7 +27,7 @@ export default {
     },
     setup(props) {
         const iframe = computed(() => {
-            return `<iframe style="border: solid 1px #ccc" width="560" height="315" src="${props.url}"></iframe>`
+            return `<div style="position:relative;padding-top:75%;height:0;"><iframe style="border: solid 1px #ccc;width:100%;height:100%;position:absolute;top:0;left:0;" width="400" height="300" src="${props.url}"></iframe></div>`
         })
         const handleSave = () => {
           window.history.pushState(null, document.title, props.url)
