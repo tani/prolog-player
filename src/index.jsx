@@ -108,10 +108,6 @@ const Misc = () => {
             </a>
             . Please visit here if you have some idea or contributions.
           </p>
-          <p>
-            This software based on Vue, Primevue, and Tau Prolog. Thank you for
-            great softwares!
-          </p>
         </Typography>
         <div>
           <Typography headline6>Terms of Use</Typography>
