@@ -20,7 +20,7 @@ import "preact-material-components/Card/style.css";
 const getOrElse = (url, key, defaultValue) =>
   url?.searchParams.has(key) ? url.searchParams.get(key) : defaultValue;
 
-let url = typeof window === undefined ? new URL(window.location.href) : null;
+let url = typeof window !== "undefined" ? new URL(window.location.href) : null;
 
 const initialState = {
   html: getOrElse(url, "html", "<h1>Hello Prolog</h1>"),
